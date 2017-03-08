@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96bae4"
+    android:orientation="vertical"
+    tools:context="com.example.android.inclassassignment05_mengqid.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:background="#3b6aa0"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+
+        android:src="@drawable/title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Welcome to the student information system. Please enter your username:"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:id="@+id/username_display"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:hint="Enter your username here"
+        android:id="@+id/new_username"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="changeUsername"
+        android:textSize="12dp"
+        android:text="Change"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Student Name:"
+        android:textColor="#3b6aa0"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#c9d6e4"
+        android:hint="  Please enter student's name here"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:text="UNI:"
+        android:textColor="#3b6aa0"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/uni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#c9d6e4"
+        android:hint="  Please enter student's uni"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="8dp" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Upload your profile picture"
+        android:textSize="8dp"
+        android:background="#3b6aa0"
+        android:onClick="profile"
+        android:textColor="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Gender:"
+            android:textColor="#3b6aa0"
+            android:textSize="8dp" />
+
+        <RadioGroup
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#c9d6e4"
+            android:layout_marginRight="30dp">
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="3dp"
+                android:text="Female"
+                android:textSize="12dp"/>
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="3dp"
+                android:text="Male"
+                android:textSize="12dp"/>
+
+            <RadioButton
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="3dp"
+                android:text="Other"
+                android:textSize="12dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Graduate: "
+            android:textColor="#3b6aa0"
+            android:textSize="8dp" />
+
+        <RadioGroup
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#c9d6e4"
+            android:layout_marginRight="16dp"
+            >
+
+            <RadioButton
+                android:id="@+id/graduate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Graduated"
+                android:textSize="12dp"/>
+
+            <RadioButton
+                android:id="@+id/not_graduate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Not Yet"
+                android:textSize="12dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#3b6aa0"
+            android:onClick="save"
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="#3b6aa0"
+            android:onClick="results"
+            android:text="Records"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</LinearLayout>
