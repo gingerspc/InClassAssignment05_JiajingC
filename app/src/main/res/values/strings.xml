@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">InClassAssignment05_JiajingC</string>
+    <string name="saved_username"></string>
+    <string name="saved_username_default">User</string>
 </resources>
